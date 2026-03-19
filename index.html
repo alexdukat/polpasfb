@@ -2,14 +2,41 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema Frutos da Bahia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Frutos da Bahia - Gestão</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        /* Remove todas as margens e preenchimentos do navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Força o corpo e o html a ocuparem 100% da altura da tela */
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Impede a barra de rolagem dupla */
+            background-color: #f8f9fa;
+        }
+
+        /* Estiliza o Iframe para ser invisível e ocupar tudo */
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbx6F8fMdASgJEbJ4gwqldCIHwUeKrJRQenLkOsIojPCYgc7zbTwpgcYQrr4LMt-vndu5w/exec"></iframe>
+    <iframe 
+        src="https://script.google.com/macros/s/SUA_URL_ATUALIZADA_AQUI/exec" 
+        allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" 
+        sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals">
+    </iframe>
 </body>
 </html>
